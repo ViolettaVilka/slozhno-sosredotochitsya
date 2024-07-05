@@ -17,8 +17,7 @@
   background-position: center;
   background-size: cover;
   font-size: 18px;
-  margin: 0;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .decorated-zone {
@@ -348,13 +347,12 @@
 .footer {
   display: flex;
   justify-content: center;
-  margin: 0;
-  height: 100%;
+  align-content: center;
+  min-height: 100vh;
 }
 
 .footer__title {
   margin-block-start: 285px;
-  margin-block-end: 285px;
   font-size: 116px;
   font-weight: 700;
   line-height: 95.7px;
@@ -366,7 +364,6 @@
 
   .footer__title {
     margin-block-start: 463px;
-    margin-block-end: 463px;
     font-size: 120px;
     line-height: 99px;
   }
@@ -376,7 +373,6 @@
 
   .footer__title {
     margin-block-start: 319px;
-    margin-block-end: 319px;
     font-size: 157px;
     line-height: 129.53px;
   }
