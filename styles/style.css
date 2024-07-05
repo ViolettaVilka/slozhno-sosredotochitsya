@@ -1,6 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -20,6 +24,13 @@
 }
 
 @media (min-width: 768px) {
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
   .decorated-zone {
     padding: 20px;
   }
@@ -74,13 +85,13 @@
 
 .header__title {
   grid-column: 1 / span 2;
-  padding-block-end: 55px;
+  margin-block-end: 55px;
   font-size: 116px;
   font-weight: 700;
   line-height: 95.7px;
   color: #DB00FF;
   text-shadow: 4px 4px var(--shadow-color);
-  margin-block-end: 162px;
+  /* margin-block-end: 162px; */
 }
 
 .header__description {
@@ -99,7 +110,7 @@
 }
 
 @media (min-width: 768px) {
-
+  
   .header__theme-menu {
     padding-block-start: 146px;
     padding-block-end: 173px;
@@ -117,6 +128,11 @@
 } 
 
 @media (min-width: 1024px) {
+
+  .header__theme-menu {
+    padding-block-end: 0px;
+  }
+
   .header__theme-menu {
     grid-row: 1;
     grid-column: 1 / span 2;
@@ -131,7 +147,8 @@
   }
 
   .header__title {
-    padding-block-end: 55px;
+    margin-block-end: 114px;
+    margin-block-start: 273px;
     font-size: 157px;
     font-weight: 700;
     line-height: 129.53px;
@@ -218,11 +235,8 @@
 
 @media (min-width: 768px) {
 
-  .header__description {
-    grid-column: 2;
-  }
 
-  .decorated-zone:not(:first-child){
+  .decorated-zone:not(:first-child) {
     gap: 80px;
   }
 
@@ -257,7 +271,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .main__content_section:nth-child(4) .main__content_card-title{
+  .main__content_section:nth-child(4) .main__content_card-title {
     grid-column: 1/span 3;
     grid-row: 1;
   }
@@ -265,7 +279,7 @@
   .main__content_card-image {
     object-fit: cover;
     max-width: 100%;
-    height: 100%; 
+    height: 100%;
   }
 
   .images_section {
@@ -348,10 +362,21 @@
   text-shadow: 4px 4px var(--accent-color);
 }
 
+@media (min-width: 768px) {
+
+  .footer__title {
+    margin-block-start: 463px;
+    margin-block-end: 463px;
+  }
+}
+
 @media (min-width: 1024px) {
+
   .footer__title {
   font-size: 157px;
   font-weight: 700;
   line-height: 129.53px;
+  margin-block-start: 319px;
+  margin-block-end: 319px;
   }
 }
