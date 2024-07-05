@@ -17,6 +17,8 @@
   background-position: center;
   background-size: cover;
   font-size: 18px;
+  margin: 0;
+  height: 100%;
 }
 
 .decorated-zone {
@@ -54,10 +56,6 @@
   height: 9px;
   border-radius: 50%;
   background-color: var(--accent-color);
-}
-
-.header {
-  width: 100%;
 }
 
 .header__theme-menu {
@@ -134,15 +132,12 @@
 @media (min-width: 1024px) {
 
   .header__theme-menu {
-    padding-block-end: 0px;
-  }
-
-  .header__theme-menu {
     grid-row: 1;
     grid-column: 1 / span 2;
     align-self: start;
     justify-self: center;
     padding-block-start: 0px;
+    padding-block-end: 0px;
   }
 
   .header__theme-menu-list {
@@ -353,7 +348,8 @@
 .footer {
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 .footer__title {
