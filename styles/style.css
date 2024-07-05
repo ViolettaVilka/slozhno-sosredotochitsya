@@ -21,7 +21,8 @@
 }
 
 .decorated-zone {
-  padding: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
 }
 
 @media (min-width: 768px) {
@@ -33,7 +34,8 @@
   }
 
   .decorated-zone {
-    padding: 20px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
   }
 }
 
@@ -92,7 +94,6 @@
   line-height: 95.7px;
   color: #DB00FF;
   text-shadow: 4px 4px var(--shadow-color);
-  /* margin-block-end: 162px; */
 }
 
 .header__description {
