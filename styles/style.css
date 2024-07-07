@@ -267,7 +267,7 @@
 
   .main__content_section {
     display: grid;
-    grid-template-columns: 32.4% 1fr 1fr;
+    grid-template-columns: 32% 1fr 1fr;
   }
   
   .main__content_section-title {
