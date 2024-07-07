@@ -4,18 +4,13 @@
   --background-color: #FFF1F7;
   --text-color: #353430;
   --text-on-accent-color: #353430;
+  --title-color : #FFC2E6;
   background-color: var(--background-color);
   background-image: url(../images/cover-image-light.png);
 }
 
 .main__content_section-title {
   color: var(--text-color);
-}
-
-.header__title ,
-.footer__title {
-  color: #FFC2E6;
-  text-shadow: 4px 4px var(--accent-color);
 }
 
 .decoration-element {
@@ -29,11 +24,3 @@
 .card-description-link {
   text-shadow: 1.5px 1.5px var(--accent-color);
 }
-
-@media (min-width: 1024px) {
-  .header__title ,
-  .footer__title {
-    color: #FFC2E6;
-    text-shadow: 4px 4px #FF0070;
-    }
-  }
