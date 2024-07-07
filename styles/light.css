@@ -1,18 +1,9 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-
 
 .page.theme_light {
   --accent-color: #FF8DCB;
   --background-color: #FFF1F7;
   --text-color: #353430;
   --text-on-accent-color: #353430;
-  
-.header {
   background-color: var(--background-color);
   background-image: url(../images/cover-image-light.png);
 }
@@ -29,8 +20,8 @@
 
 .decoration-element {
   visibility: hidden;
-
 }
+
 .header__theme-menu-button {
   color: var(--text-color);
 }
@@ -46,4 +37,3 @@
     text-shadow: 4px 4px #FF0070;
     }
   }
-}
