@@ -30,10 +30,12 @@
   
   .header__title {
     color: var(--title-color);
+    text-shadow: 4px 4px var(--accent-color);
   }
 
   .footer__title {
     color: var(--title-color);
+    text-shadow: 4px 4px var(--accent-color);
   }
   
   .card-description-link {
@@ -51,26 +53,3 @@
         background-image: url(../images/cover-image-dark.png);
     }
 }
-
-.decoration-element {
-    grid-column: 2;
-    grid-row:1;
-    justify-self: end;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    visibility: visible;
-  }
-
-.main__content_section-title {
-    color: var(--accent-color);
-  }
-  
-  .header__theme-menu-button {
-    color: var(--accent-color);
-  }
-  
-  .card-description-link {
-    text-shadow: 1.5px 1.5px var(--shadow-color);
-  }
