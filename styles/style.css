@@ -1,16 +1,14 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  --accent-color: #FF8DCB;
-  --background-color: #FFF1F7;
-  --text-color: #353430;
-  --text-on-accent-color: #353430;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-color: var(--background-color);
   background-image: url(../images/cover-image-light.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
@@ -26,14 +24,7 @@
 }
 
 .decoration-element {
-  grid-column: 2;
-  grid-row:1;
-  justify-self: end;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  visibility: visible;
+  visibility: hidden;
 }
 
 .header .decorated-zone::after {
@@ -77,8 +68,8 @@
   font-size: 116px;
   font-weight: 700;
   line-height: 95.7px;
-  color: #DB00FF;
-  text-shadow: 4px 4px var(--shadow-color);
+  color: #FFC2E6;
+  text-shadow: 4px 4px #FF0070;
 }
 
 .header__description {
@@ -110,6 +101,10 @@
   .header__theme-menu {
     padding-block-start: 146px;
     padding-block-end: 173px;
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color);
   }
 
   .header__title {
@@ -181,7 +176,7 @@
 }
 
 .main__content_section-title {
-  color: var(--accent-color);
+  color: var(--text-color);
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
@@ -207,7 +202,7 @@
 }
 
 .card-description-link {
-  text-shadow: 1.5px 1.5px var(--shadow-color);
+  text-shadow: 1.5px 1.5px var(--accent-color);
 }
 
 .card-description-link:hover {
@@ -354,12 +349,12 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
   padding: 10px;
   min-height: 100vh;
 }
 
 .footer__title {
-  align-self: center;
   font-size: 116px;
   font-weight: 700;
   line-height: 95.7px;
