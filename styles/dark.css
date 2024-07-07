@@ -3,4 +3,11 @@
     --background-color: #000028;
     --text-color: #F1B2CE;
     --text-on-accent-color: #000028;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--background-color);
+    background-image: url(../images/cover-image-dark.png);
+
 }

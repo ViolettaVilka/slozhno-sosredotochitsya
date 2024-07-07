@@ -1,16 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  --accent-color: #FF8DCB;
+  --background-color: #FFF1F7;
+  --text-color: #353430;
+  --text-on-accent-color: #353430;
   background-color: var(--background-color);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url(../images/cover-image-light.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -153,6 +152,7 @@
   .header__description {
     grid-row: 3;
     grid-column: 2;
+    margin-block-end: 134px;
   }
 }
 
@@ -197,6 +197,7 @@
   background-color: var(--accent-color);
   color: var(--text-on-accent-color);
   line-height: 23.4px;
+  font-size: 18px;
 }
 
 .main__content_card-description {
@@ -358,7 +359,7 @@
 }
 
 .footer__title {
-  margin-block-start: 285px;
+  align-self: center;
   font-size: 116px;
   font-weight: 700;
   line-height: 95.7px;
@@ -373,7 +374,6 @@
   }
 
   .footer__title {
-    margin-block-start: 463px;
     font-size: 120px;
     line-height: 99px;
   }
@@ -382,7 +382,6 @@
 @media (min-width: 1024px) {
 
   .footer__title {
-    margin-block-start: 319px;
     font-size: 157px;
     line-height: 129.53px;
   }
