@@ -257,6 +257,12 @@
   cursor: pointer;
 }
 
+.main__content_section-adjustable-position {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .weight-regular {
   font-weight: 400;
 }
@@ -312,8 +318,13 @@
     grid-column: 2 / span 3 ;
   }
 
+  .images_section {
+    display: grid;
+  }
+
   .main__content_card-image {
     height: 100%;
+    display: grid;
   }
 
   .main__content_card-image:nth-child(1) {
