@@ -302,7 +302,6 @@
     grid-row: 2;
     grid-column: 1 / span 3;
     display: grid;
-    grid-row-gap: 20px;
   }
 
   .main__content_section-adjustable-position .main__content_section-title {
@@ -355,11 +354,9 @@
 
 @media (min-width: 1024px) {
 
-  .main__content_section-adjustable-position {
-    display: grid;
-    gap: 20px;
+  .main__content_section-adjustable-position .main__content_card {
+    max-width: 315px;
   }
-
   .main__content_section-adjustable-position .main__content_card:nth-child(1) {
     grid-row: 1;
     grid-column: 1;
