@@ -8,18 +8,6 @@
   background-image: url(../images/cover-image-light.png);
 }
 
-.main__content_section-title {
-  color: var(--text-color);
-}
-
 .decoration-element {
   visibility: hidden;
-}
-
-.header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.card-description-link {
-  text-shadow: 1.5px 1.5px var(--accent-color);
 }

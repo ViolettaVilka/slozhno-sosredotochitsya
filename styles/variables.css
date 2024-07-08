@@ -8,4 +8,8 @@
   --text-color: #353430;
   --text-on-accent-color: #353430;
   --title-color : #FFC2E6;
+  --border-color :#353430;
+  --section-title-color : #353430;
+  --text-shadow-color:#FF0070;
+  --background-image :url(../images/cover-image-light.png)
 }
