@@ -131,7 +131,7 @@
   }
 
   .header__theme-menu {
-    margin-block-start: 161px;
+    margin-block-start: 168px;
     margin-block-end: 173px;
   }
 
@@ -283,6 +283,7 @@
   .main__content {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+    gap: 80px;
   }
 
   .main__content_section {
@@ -292,6 +293,7 @@
   
   .main__content_section-title {
     grid-column: 1;
+    grid-row: 1;
   }
 
   .main__content_section-adjustable-position {
@@ -300,11 +302,6 @@
     display: grid;
     gap: 0px;
     grid-row-gap: 20px;
-  }
-
-  .main__content_section-title {
-    grid-row: 1;
-    grid-column: 1;
   }
 
   .main__content_section-title-span {
@@ -336,7 +333,7 @@
 
   .main__content_card-image:nth-child(3) {
     grid-column: 1;
-    grid-row: 2 / span 3;
+    grid-row: 3 / span 2;
   }
 
   .main__content_card-image:nth-child(4) {

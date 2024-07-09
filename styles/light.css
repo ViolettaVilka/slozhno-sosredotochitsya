@@ -12,16 +12,3 @@
 .decoration-element {
   visibility: hidden;
 }
-
-@media (prefers-color-scheme: light) {
-  .page {
-    --accent-color: #FF8DCB;
-    --background-color: #FFF1F7;
-    --text-color: #353430;
-    --text-on-accent-color: #353430;
-    --title-color : #FFC2E6;
-    --border-color :#353430;
-    --section-title-color : #353430;
-    background-image: url(../images/cover-image-light.png);
-  }
-}

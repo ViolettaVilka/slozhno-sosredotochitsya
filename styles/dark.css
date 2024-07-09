@@ -12,7 +12,7 @@
 .page.theme_dark .decoration-element {
     position: absolute;
     top: 9px;
-    right: 29px;
+    right: 20px;
     grid-column: 2;
     grid-row:1;
     justify-self: end;
@@ -23,16 +23,23 @@
     background-color: var(--accent-color);
     box-shadow: 0px 0px 4px 2px var(--accent-color);
     visibility: visible;
-  }
+}
 
-  .decoration-element::before {
+.decoration-element::before {
     content: 'REC';
     color: var(--accent-color);
     position: absolute;
     top: -7px;
     right: 20px;
-  }
+}
 
+@media (min-width: 768px) {
+    
+    .page.theme_dark .decoration-element {
+        right: 29px;
+    }
+}
+   
 @media (prefers-color-scheme: dark) {
     .page {
         --accent-color: #FF0070;
