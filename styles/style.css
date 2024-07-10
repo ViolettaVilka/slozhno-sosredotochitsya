@@ -45,6 +45,38 @@
   border-left: var(--border-color) 1px solid;;
 }
 
+.page.theme_dark .decoration-element {
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  grid-column: 2;
+  grid-row:1;
+  justify-self: end;
+  align-self: center;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  visibility: hidden;
+}
+
+.decoration-element::before {
+  content: 'REC';
+  color: var(--accent-color);
+  position: absolute;
+  top: -7px;
+  right: 20px;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    
+  .page.theme_dark .decoration-element {
+      right: 29px;
+  }
+}
+
 .header__theme-menu {
   grid-row: 2;
   grid-column: 1 / span 2;
@@ -66,6 +98,25 @@
   border-color: transparent;
   color: var(--border-color);
   padding: 0px 13px 0px 13px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: var(--border-color) 1px solid;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: var(--border-color) solid 1px;
+}
+
+.header__theme-menu-button:hover {
+  cursor: pointer;
+  outline: var(--outline-hover-color) solid 1px;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: var(--border-color) 1px solid;
 }
 
 .title {
@@ -93,20 +144,6 @@
   grid-row: 4;
   grid-column: 1 / span 2;
   margin-block-end: 56px;
-}
-
-.header__theme-menu-button:focus-visible {
-  outline: var(--border-color) solid 1px;
-}
-
-.header__theme-menu-button:hover {
-  cursor: pointer;
-  outline: var(--border-color) solid 1px;
-}
-
-.header__theme-menu-button:focus {
-  outline: none;
-  border-bottom: var(--border-color) 1px solid;
 }
 
 @media (min-width: 768px) {
